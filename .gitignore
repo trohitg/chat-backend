@@ -1,0 +1,72 @@
+# Environment Variables - CRITICAL: Never commit these files!
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+*.env
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Build outputs
+dist/
+build/
+
+# Secrets and Credentials - NEVER COMMIT!
+tunnel/credentials.json
+tunnel/cert.pem
+*secret*
+*credentials*
+*key.json
+
+# Test artifacts and temporary files
+.pytest_cache/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+test_results/
+htmlcov/
+*.tmp
+*.backup
+*.old
+*_backup
+*_old

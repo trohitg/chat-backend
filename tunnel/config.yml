@@ -1,0 +1,10 @@
+tunnel: 5554ea6f-954b-4a05-bae9-b798089da34e
+credentials-file: /etc/cloudflared/credentials.json
+
+ingress:
+  - hostname: api.disutopia.xyz
+    service: http://chat-reverse-proxy:80
+    originRequest:
+      noTLSVerify: true
+      httpHostHeader: api.disutopia.xyz
+  - service: http_status:404
